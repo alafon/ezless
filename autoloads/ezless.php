@@ -122,6 +122,7 @@ class ezLessOperator{
 
 		$files = $this->prependArray( self::$files, $pageLayoutFiles );
 
+        $files = array_unique( $files );
 		return $this->generateTag( $files );
 	}
 
